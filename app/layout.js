@@ -1,5 +1,3 @@
-"use client";
-
 import "./globals.css";
 import Header from "@/components/Header";
 import { LocationProvider } from "@/contexts/LocationContext";
@@ -8,6 +6,11 @@ import { CartProvider } from "@/contexts/CartContext";
 import { Poppins } from "next/font/google";
 import BottomNav from "@/components/BottomNav";
 import { Suspense } from "react";
+
+export const metadata = {
+  title: "Bartering.com",
+  description: "Trade Anything, Anytime, with Anyone, Anywhere from the comfort of your Home!",
+};
 
 // Use Poppins as the primary font
 const poppins = Poppins({
